@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Backoffice.Data;
-using Backoffice.Models;
+using Shop.Data;
+using Shop.Models;
 
-namespace Backoffice.Controllers
+namespace Shop.Controllers
 {
     [Route("v1")]
     public class HomeController : Controller
