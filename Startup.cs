@@ -55,10 +55,10 @@ namespace Shop
                 };
             });
 
-            // services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
-            services.AddDbContext<DataContext>(
-                opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString"))
-                );
+            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            // services.AddDbContext<DataContext>(
+            //     opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString"))
+            //     );
 
             //estudar sobre AddTransient e AddSingleton
             //AddScoped foi usado para garantir que só exista um DataContext por requisição
